@@ -20,10 +20,10 @@ function adicionaContato(){
     const telefoneContato = document.getElementById('telefone-contato');
 
     if(telContatos.includes (telefoneContato.value)){
-        alert(`O número ${telefoneContato} já está na sua lista.`);
+        alert(`O número do(a) ${nomeContato.value}, ${telefoneContato.value} já está na sua lista.`);
     }else{
-        nomeContatos.push = nomeContato.value;
-        telContatos.push = telefoneContato.value;
+        nomeContatos.push(nomeContato.value);
+        telContatos.push(telefoneContato.value);
 
         let linha = '<tr>';
         linha += `<td>${nomeContato.value}</td>`;
